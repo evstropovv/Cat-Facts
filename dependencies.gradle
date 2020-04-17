@@ -1,0 +1,34 @@
+ext {
+    //Version
+    kotlin = '1.3.61'
+    ktx = '1.2.0'
+    appcompat = '1.1.0'
+    lifecycle = '2.2.0'
+    glideVersion = '4.11.0'
+    coroutinesVersion = '1.3.2'
+    daggerVersion = '2.25.4'
+    retrofitVersion = '2.7.1'
+    okHttpLoggingVersion = '3.10.0'
+
+    projectDependencies = [
+            kotlin             : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin",
+            ktx                : "androidx.core:core-ktx:$ktx",
+            appCompat          : "androidx.appcompat:appcompat:${appcompat}",
+            constraintLayout   : "androidx.constraintlayout:constraintlayout:${appcompat}",
+            lifecycleExtentions: "androidx.lifecycle:lifecycle-extensions:${lifecycle}",
+            viewmodels         : "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycle}",
+            glide              : "com.github.bumptech.glide:glide:${glideVersion}",
+            glideProcessor     : "com.github.bumptech.glide:compiler:${glideVersion}",
+            coroutines         : "org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutinesVersion}",
+            dagger             : "com.google.dagger:dagger:${daggerVersion}",
+            daggerAndroid      : "com.google.dagger:dagger-android-support:${daggerVersion}",
+            daggerCompiler     : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            retrofit           : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            gsonConverter      : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            logginInterceptor  : "com.squareup.okhttp3:logging-interceptor:${okHttpLoggingVersion}",
+
+            jUnit              : "junit:junit:4.12",
+            jUnitExt           : "androidx.test.ext:junit:1.1.1",
+            espresso           : "androidx.test.espresso:espresso-core:3.2.0"
+    ]
+}
